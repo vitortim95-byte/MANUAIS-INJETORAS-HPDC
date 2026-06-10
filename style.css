@@ -1,0 +1,219 @@
+/* RESET */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+/* BODY */
+
+body{
+
+    background:#001f2f;
+
+    color:white;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    min-height:100vh;
+
+}
+
+/* TOPO */
+
+.topo{
+
+    background:#001827;
+
+    padding:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+/* LOGO */
+
+.logo{
+
+    width:120px;
+
+    height:auto;
+
+}
+
+/* TITULO */
+
+.topo h1{
+
+    font-size:48px;
+
+    font-weight:bold;
+
+}
+
+/* LINHA */
+
+hr{
+
+    border:1px solid white;
+
+}
+
+/* CARDS */
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:120px;
+
+    margin-top:80px;
+
+    flex-wrap:wrap;
+
+    padding:20px;
+
+}
+
+/* CARD */
+
+.card{
+
+    width:260px;
+
+    height:280px;
+
+    background:white;
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:0.3s;
+
+    cursor:pointer;
+
+}
+
+/* HOVER */
+
+.card:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:
+    0 0 20px #00bfff,
+    0 0 40px rgba(0,191,255,0.4);
+
+}
+
+/* IMAGEM */
+
+.card img{
+
+    width:140px;
+
+    height:auto;
+
+    margin-bottom:20px;
+
+}
+
+/* TEXTO */
+
+.card h2{
+
+    color:black;
+
+    text-align:center;
+
+    font-size:22px;
+
+    line-height:1.2;
+
+}
+
+/* RODAPÉ */
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:80px;
+
+    color:white;
+
+    border-top:1px solid rgba(255,255,255,0.3);
+
+}
+
+footer p{
+
+    margin:5px;
+
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+    .topo{
+
+        flex-direction:column;
+
+    }
+
+    .topo h1{
+
+        font-size:30px;
+
+        text-align:center;
+
+    }
+
+    .cards{
+
+        gap:40px;
+
+        margin-top:40px;
+
+    }
+
+    .card{
+
+        width:220px;
+
+        height:240px;
+
+    }
+
+    .card img{
+
+        width:100px;
+
+    }
+
+}
